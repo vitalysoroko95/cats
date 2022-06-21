@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap");
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  background-image: url("../../assets/bg.png");
+  background-position: center;
+  -webkit-box-shadow: 0px 0px 58px 63px rgba(0, 0, 0, 0.35) inset;
+  -moz-box-shadow: 0px 0px 58px 63px rgba(0, 0, 0, 0.35) inset;
+  box-shadow: 0px 0px 58px 63px rgba(0, 0, 0, 0.35) inset;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 25px;
+}
+
+.title {
+  width: 100%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px #000000;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+
+@media (max-width: 1200px) {
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+
+}
+
+
+@media (max-width:420px) {
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+}
