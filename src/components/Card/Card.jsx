@@ -71,7 +71,7 @@ const Card = ({
           availableForPurchase >= 1 ? (
             <p> {desc}</p>
           ) : (
-            <p className="disabled-text">Печалька с {taste} закончился.</p>
+            <p className="disabled-text">Печалька {taste} закончился.</p>
           )
         ) : (
           <p>
