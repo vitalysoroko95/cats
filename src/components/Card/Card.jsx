@@ -50,7 +50,7 @@ const Card = ({
       >
         <p className= {cn("card-title", {
           'active': isSelectedHover && isSelected
-        })}>{isSelectedHover && isSelected ? 'Котэ не одобряет?' : 'Сказочное заморское яство'}</p>
+        })}>{isSelectedHover && isSelected && availableForPurchase > 0 ? 'Котэ не одобряет?' : 'Сказочное заморское яство'}</p>
         <h2 className="title-name">Нямушка</h2>
         <p className="taste">{taste}</p>
         <p className="portions">
